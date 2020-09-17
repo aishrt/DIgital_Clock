@@ -15,9 +15,13 @@ start :
             for(s; s<60; s++)
             {
                 system("cls");
-                printf("\n\t\t----------------");
-                printf("\n\t\t| %d | %d | %d |",h,m,s);
-                printf("\n\t\t----------------");
+                printf("\n\t\t--------------------");
+                printf("\n\t\t| %d | %d | %d |    ",h,m,s);
+                printf("\n\t\t--------------------");
+                if(h>12)
+                       printf("pm");
+                else
+                    printf("am");
                 sleep(1);  //ye chlne se output 1 sec late ayegaa
                 i++;
                 if(i==86400)
